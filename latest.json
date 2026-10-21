@@ -1,2 +1,1 @@
-{"version":"5.3.3","url":"https://raw.githubusercontent.com/at/startup/main/LumiType.exe","sha256":"56ec06da3d081d5165384a48a81147767057ae7e1c7f70cf697ec72313881926","notes":"热修复：单实例锁改名 V3→V4 并增加 IOException 兜底（匿名 Mutex + HotkeySink 窗口去重），解决本机遗留的僵尸单实例锁导致应用启动即退出的问题（2026-10-21 实测：旧名被高完整级残留对象占用，启动报「访问被拒绝」）。V5.3.2 的滑条旋钮遮挡修复与反馈弹窗按钮居中不变。
-"}
+{"version":"5.3.3","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"56ec06da3d081d5165384a48a81147767057ae7e1c7f70cf697ec72313881926","notes":"热修复：单实例锁改名 V3→V4 并增加 IOException 兜底（匿名 Mutex + HotkeySink 窗口去重），解决本机遗留的僵尸单实例锁导致应用启动即退出的问题（2026-10-21 实测：旧名被高完整级残留对象占用，启动报「访问被拒绝」）。V5.3.2 的滑条旋钮遮挡修复与反馈弹窗按钮居中不变。"}
