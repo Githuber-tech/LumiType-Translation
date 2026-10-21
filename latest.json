@@ -1,1 +1,2 @@
-{"version":"5.2.0","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"fdf8926c4bbc079b57aa7766f67c8dec290a36847d39d72481fc9004f35bea85","notes":"UI language switch (zh/en) in Preferences; repo renamed to LumiType-Translation"}
+{"version":"5.3.2","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"c3c854abab1c2f68a3c136cda1b0203019935025cc177e07591bcbd9801abcc1","notes":"① 修复透明度滑条旋钮被「透明度」标签背景块遮挡（标签改 AutoSize，盒子不再与滑条重叠，15% 时旋钮完整可见）；② 反馈弹窗「发送反馈 / 取消」两按钮向中间移动，排版更舒适；③ 本版按用户要求立即托管，包含 V5.3.0 / V5.3.1 全部功能（吸附外边框+宽度跟随+目标关窗自动关、玻璃下限 15%、首选项紧凑化、更新日志双语、FormSubmit 反馈通路修复——反馈表单已激活，真实反馈直达收件箱）。
+"}
