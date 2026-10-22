@@ -1,8 +1,9 @@
 # LumiType - Real-time typing translation overlay for Windows
 
 Type in a floating overlay next to your caret, press **Enter**, and the DeepL-powered
-translation is pasted back into the chat app (WeChat, WhatsApp, Feishu, DingTalk, Notepad,
-and most windows). No copy-paste, no context switching. A single portable `.exe` - no
+translation is pasted back into the chat app or Mailbird email compose window (WeChat,
+WhatsApp, Feishu, DingTalk, Notepad, Mailbird, and most windows). No copy-paste, no
+context switching. A single portable `.exe` - no
 installer, no dependencies.
 
 ![LumiType in use](preview.png)
