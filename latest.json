@@ -1,14 +1,15 @@
-{"version":"6.1.5","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"65b888e901eab5ba98a9f6d2577b6a1d58c5eeb82465cb7101bc12a551b3e0c6","notes":"LumiType 灵译 V6.1.5
+{"version":"6.1.6","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"c494a8b604de28fe112904ce73201b54bc1300082529156623a42cf7f5faa841","notes":"LumiType 灵译 V6.1.6（重要修复）
 
-本次更新
-1. 首选项最大高度封顶
-   · 高度上限改为'内容实际高度'，内容排完即到顶，继续下拉不再出现底部大片留白。
+问题：翻译失败，提示 403 Authorization header is missing API key
+· 不是 API Key 失效，也不是需要重新申请。
+· 根因：V6.0.0 把配置拆成 DeeplKey / GoogleKey / LlmKey 后清空了旧的 ApiKey，但 DeepL 请求头仍读旧字段，
+  导致 V6.0.0 ~ V6.1.5 期间每个请求都是匿名的，被 DeepL 拒绝（403）。
 
-2. 排版更紧凑
-   · 分区间距 8→4px、分组底部留白 6→3px、容器内边距收紧。
-   · 修正：'快捷键'分组下方那条空白带——预留的空错误提示标签此前被当成内容撑高了分组，现在测量时跳过空标签。
+修复
+· 请求头改用 cfg.DeeplKey（为空时兼容回退旧 ApiKey）。
+· 未配置 Key 时给出明确提示，不再把 403 原文抛给用户。
+· --api-key 参数同时写入两个字段，避免'只写一半'。
 
-3. 更新日志框铺满页面
-   · 说明框由固定 600x440 改为自适应铺满（版本下拉固定在顶部），同高度下可见条目从 9 条增加到 15 条以上。
+实测：同一句 49 字原文 -> deepl done model=quality_optimized src=ZH in=49 out=108，译文正常。
 
-升级方式：下载 LumiType.exe 覆盖旧文件即可（配置与缓存保留在 config 目录）。"}
+建议所有 V6.0.0 及以上用户立即升级：配置无需改动，覆盖 LumiType.exe 即可。"}
