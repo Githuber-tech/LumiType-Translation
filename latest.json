@@ -1,15 +1,11 @@
-{"version":"6.1.6","url":"https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe","sha256":"c494a8b604de28fe112904ce73201b54bc1300082529156623a42cf7f5faa841","notes":"LumiType 灵译 V6.1.6（重要修复）
-
-问题：翻译失败，提示 403 Authorization header is missing API key
-· 不是 API Key 失效，也不是需要重新申请。
-· 根因：V6.0.0 把配置拆成 DeeplKey / GoogleKey / LlmKey 后清空了旧的 ApiKey，但 DeepL 请求头仍读旧字段，
-  导致 V6.0.0 ~ V6.1.5 期间每个请求都是匿名的，被 DeepL 拒绝（403）。
-
-修复
-· 请求头改用 cfg.DeeplKey（为空时兼容回退旧 ApiKey）。
-· 未配置 Key 时给出明确提示，不再把 403 原文抛给用户。
-· --api-key 参数同时写入两个字段，避免'只写一半'。
-
-实测：同一句 49 字原文 -> deepl done model=quality_optimized src=ZH in=49 out=108，译文正常。
-
-建议所有 V6.0.0 及以上用户立即升级：配置无需改动，覆盖 LumiType.exe 即可。"}
+{
+  "version": "6.2.0",
+  "url": "https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe",
+  "sha256": "1e003198c14a0c99085cfe14cc05fc3a60dd3fb14767bf54e931a79aaccc1dfa",
+  "notes": "V6.2.0 翻译提速：句末标点后 220ms 即发请求、长连接复用、启动预热。带句号的短句「停手 → 看到译文」由 3.4–4.3s 降到 0.85–0.97s。覆盖 LumiType.exe 即可，config/settings.json 无需改动。",
+  "mac": {
+    "url": "https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType-macOS.zip",
+    "sha256": "9404a69f8584a1885cba7180e95c6f937e4f28b1e7585f94ae4b47e72c9d8383",
+    "notes": "6.2.0 macOS 原生版首发：菜单栏浮层 ⌥Y、Enter 回插、21 个应用吸附、四页首选项、三引擎、通用二进制（Apple Silicon + Intel）。"
+  }
+}
