@@ -1,0 +1,6 @@
+.DS_Store
+
+# macOS build outputs
+macos/dist/
+macos/.build/
+macos/*.iconset/
