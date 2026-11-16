@@ -1,11 +1,6 @@
 {
-  "version": "0.0.12",
+  "version": "0.0.17",
   "url": "https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe",
-  "sha256": "1e003198c14a0c99085cfe14cc05fc3a60dd3fb14767bf54e931a79aaccc1dfa",
-  "notes": "V6.2.0 翻译提速：句末标点后 220ms 即发请求、长连接复用、启动预热。带句号的短句「停手 → 看到译文」由 3.4–4.3s 降到 0.85–0.97s。覆盖 LumiType.exe 即可，config/settings.json 无需改动。",
-  "mac": {
-    "url": "https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType-macOS.zip",
-    "sha256": "2afdd6e43d900c720e93a6df816dbd1afbcd35c92530ec32a1f8dac6b21fb5c5",
-    "notes": "0.0.12：取消 Esc 关闭浮层（只认 ✕ 或关闭被吸附窗口）；只吸附桌面顶层应用，后台窗口不再出吸附高亮；版本号改为 0.0.x 新规则，更新日志同步重编号。"
-  }
+  "sha256": "d52533a2c88997f8d6fa59e26fcdb2973289f94694234e0e775acd17eab312d4",
+  "notes": "Windows-only V0.0.17：取消 Esc 关闭、仅吸附唤出前台应用、改进目标激活等待与手动粘贴回退。macOS 版本已停止维护。"
 }
