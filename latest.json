@@ -2,5 +2,5 @@
   "version": "0.0.17",
   "url": "https://raw.githubusercontent.com/Githuber-tech/LumiType-Translation/main/LumiType.exe",
   "sha256": "d52533a2c88997f8d6fa59e26fcdb2973289f94694234e0e775acd17eab312d4",
-  "notes": "Windows-only V0.0.17：取消 Esc 关闭、仅吸附唤出前台应用、改进目标激活等待与手动粘贴回退。macOS 版本已停止维护。"
+  "notes": "V0.0.17：取消 Esc 关闭（改用卡片 ✕）、仅吸附唤出前台应用、改进目标激活等待与手动粘贴回退。"
 }
